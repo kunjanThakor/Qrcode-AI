@@ -12,11 +12,11 @@
   </head>
   <body>
     <div class="card">
-        <input type="text" name="txt" id="url" placeholder="Enter your URL">
-        <button type="button"  class="btn btn-outline-primary" onclick="generateQr()">Generate QR </button>
-        <img src="" alt="QrCode" id="qr">
-      </div>
-
+      <input type="text" name="url" id="url" placeholder="Enter your URL" autocomplete="off">
+      <button type="button"  class="btn btn-outline-primary" onclick="generateQr()">Generate QR </button>
+      <button type="button" id="clr"  class="btn btn-outline-primary" onclick="reset()" style="visibility: hidden;">Reset</button>
+      <img src="" alt="QrCode" id="qr">
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./script.js"></script>

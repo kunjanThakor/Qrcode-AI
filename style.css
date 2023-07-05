@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -36,7 +38,7 @@ body {
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
-    font-family: cursive;
+    font-family: 'Poppins';
 }
 
 .card:hover {
@@ -95,26 +97,57 @@ body {
 input {
     width: 90%;
     position: relative;
-    top: -70px;
+    top: -40px;
     outline: none;
     background: transparent;
-    outline: #5ddcff;
-    border: 2px solid #007bff;
+    outline: none;
+    border: none;
     color: #fff;
     font-size: small;
     height: 7%;
+    padding: 20px;
+    border-bottom: 2px solid #007bff;
+    box-shadow: none;
+    transition: 0.3s;
 }
-
 button {
     position: relative;
     top: -20px;
     cursor: pointer;
-    
+    margin: 10px;
+
 }
 
-img{
+/* input:focus{
+    animation: line 3.4s ease-in-out infinite;
+    box-shadow: 10px #007bff;
+    transition: 2s;
+}
+
+@keyframes line {
+    0% {
+        border-bottom: none;
+        border-left: 2px solid #007bff;
+    }
+    40% {
+        border-left: none;
+        border-top: 2px solid #007bff;
+    }
+    80% {
+        border-top: none;
+        border-right: 2px solid #007bff;
+    }
+    100% {
+         /* border-left: 2px solid #007bff;
+        border-top: 2px solid #007bff; */
+        /* border-right:none; 
+        border-bottom: 2px solid #007bff; */
+    /* }
+} */
+
+img {
     position: relative;
-    bottom: -40px;
+    bottom: -10px;
     width: 150px;
     height: 150px;
     visibility: hidden;
